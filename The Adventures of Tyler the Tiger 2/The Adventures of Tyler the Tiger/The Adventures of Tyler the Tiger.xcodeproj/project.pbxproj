@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62121C73206980E50019E261 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 62121C72206980E50019E261 /* .swiftlint.yml */; };
+		621F7C1F2068473D0007605C /* Level01.plist in Resources */ = {isa = PBXBuildFile; fileRef = 621F7C1E2068473C0007605C /* Level01.plist */; };
+		6254EA71206A7B81001EECDF /* Tyler.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6254EA70206A789C001EECDF /* Tyler.m4a */; };
+		62EA22112069248A0087A9F6 /* EndGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA22102069248A0087A9F6 /* EndGameScene.swift */; };
+		62EA5885206887080070A659 /* GameElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA5884206887080070A659 /* GameElements.swift */; };
+		F8D4B569204E0CCB00476D63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D4B568204E0CCB00476D63 /* AppDelegate.swift */; };
+		F8D4B56B204E0CCB00476D63 /* SplashScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F8D4B56A204E0CCB00476D63 /* SplashScene.sks */; };
+		F8D4B56D204E0CCB00476D63 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F8D4B56C204E0CCB00476D63 /* Actions.sks */; };
+		F8D4B56F204E0CCB00476D63 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D4B56E204E0CCB00476D63 /* GameScene.swift */; };
+		F8D4B571204E0CCB00476D63 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D4B570204E0CCB00476D63 /* GameViewController.swift */; };
+		F8D4B574204E0CCB00476D63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D4B572204E0CCB00476D63 /* Main.storyboard */; };
+		F8D4B576204E0CCB00476D63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D4B575204E0CCB00476D63 /* Assets.xcassets */; };
+		F8D4B579204E0CCB00476D63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D4B577204E0CCB00476D63 /* LaunchScreen.storyboard */; };
+		F8D4B584204E0CCB00476D63 /* The_Adventures_of_Tyler_the_TigerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D4B583204E0CCB00476D63 /* The_Adventures_of_Tyler_the_TigerTests.swift */; };
+		F8D4B58F204E0CCB00476D63 /* The_Adventures_of_Tyler_the_TigerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D4B58E204E0CCB00476D63 /* The_Adventures_of_Tyler_the_TigerUITests.swift */; };
+		F8D4B59D204E0D6B00476D63 /* SplashScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D4B59C204E0D6B00476D63 /* SplashScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8D4B580204E0CCB00476D63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D4B55D204E0CCB00476D63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D4B564204E0CCB00476D63;
+			remoteInfo = "The Adventures of Tyler the Tiger";
+		};
+		F8D4B58B204E0CCB00476D63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D4B55D204E0CCB00476D63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D4B564204E0CCB00476D63;
+			remoteInfo = "The Adventures of Tyler the Tiger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62121C72206980E50019E261 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		621F7C1E2068473C0007605C /* Level01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level01.plist; sourceTree = "<group>"; };
+		6254EA70206A789C001EECDF /* Tyler.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tyler.m4a; sourceTree = "<group>"; };
+		62EA22102069248A0087A9F6 /* EndGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameScene.swift; sourceTree = "<group>"; };
+		62EA5884206887080070A659 /* GameElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameElements.swift; sourceTree = "<group>"; };
+		F8D4B565204E0CCB00476D63 /* The Adventures of Tyler the Tiger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Adventures of Tyler the Tiger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D4B568204E0CCB00476D63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8D4B56A204E0CCB00476D63 /* SplashScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SplashScene.sks; sourceTree = "<group>"; };
+		F8D4B56C204E0CCB00476D63 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		F8D4B56E204E0CCB00476D63 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F8D4B570204E0CCB00476D63 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F8D4B573204E0CCB00476D63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8D4B575204E0CCB00476D63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8D4B578204E0CCB00476D63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8D4B57A204E0CCB00476D63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D4B57F204E0CCB00476D63 /* The Adventures of Tyler the TigerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Adventures of Tyler the TigerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D4B583204E0CCB00476D63 /* The_Adventures_of_Tyler_the_TigerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Adventures_of_Tyler_the_TigerTests.swift; sourceTree = "<group>"; };
+		F8D4B585204E0CCB00476D63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D4B58A204E0CCB00476D63 /* The Adventures of Tyler the TigerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Adventures of Tyler the TigerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D4B58E204E0CCB00476D63 /* The_Adventures_of_Tyler_the_TigerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Adventures_of_Tyler_the_TigerUITests.swift; sourceTree = "<group>"; };
+		F8D4B590204E0CCB00476D63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D4B59C204E0D6B00476D63 /* SplashScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8D4B562204E0CCB00476D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D4B57C204E0CCB00476D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D4B587204E0CCB00476D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8D4B55C204E0CCB00476D63 = {
+			isa = PBXGroup;
+			children = (
+				62121C72206980E50019E261 /* .swiftlint.yml */,
+				F8D4B567204E0CCB00476D63 /* The Adventures of Tyler the Tiger */,
+				F8D4B582204E0CCB00476D63 /* The Adventures of Tyler the TigerTests */,
+				F8D4B58D204E0CCB00476D63 /* The Adventures of Tyler the TigerUITests */,
+				F8D4B566204E0CCB00476D63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8D4B566204E0CCB00476D63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8D4B565204E0CCB00476D63 /* The Adventures of Tyler the Tiger.app */,
+				F8D4B57F204E0CCB00476D63 /* The Adventures of Tyler the TigerTests.xctest */,
+				F8D4B58A204E0CCB00476D63 /* The Adventures of Tyler the TigerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8D4B567204E0CCB00476D63 /* The Adventures of Tyler the Tiger */ = {
+			isa = PBXGroup;
+			children = (
+				F8D4B568204E0CCB00476D63 /* AppDelegate.swift */,
+				F8D4B56A204E0CCB00476D63 /* SplashScene.sks */,
+				F8D4B56C204E0CCB00476D63 /* Actions.sks */,
+				F8D4B59C204E0D6B00476D63 /* SplashScene.swift */,
+				F8D4B56E204E0CCB00476D63 /* GameScene.swift */,
+				62EA22102069248A0087A9F6 /* EndGameScene.swift */,
+				62EA5884206887080070A659 /* GameElements.swift */,
+				F8D4B570204E0CCB00476D63 /* GameViewController.swift */,
+				F8D4B572204E0CCB00476D63 /* Main.storyboard */,
+				F8D4B575204E0CCB00476D63 /* Assets.xcassets */,
+				F8D4B577204E0CCB00476D63 /* LaunchScreen.storyboard */,
+				F8D4B57A204E0CCB00476D63 /* Info.plist */,
+				621F7C1E2068473C0007605C /* Level01.plist */,
+				6254EA70206A789C001EECDF /* Tyler.m4a */,
+			);
+			path = "The Adventures of Tyler the Tiger";
+			sourceTree = "<group>";
+		};
+		F8D4B582204E0CCB00476D63 /* The Adventures of Tyler the TigerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D4B583204E0CCB00476D63 /* The_Adventures_of_Tyler_the_TigerTests.swift */,
+				F8D4B585204E0CCB00476D63 /* Info.plist */,
+			);
+			path = "The Adventures of Tyler the TigerTests";
+			sourceTree = "<group>";
+		};
+		F8D4B58D204E0CCB00476D63 /* The Adventures of Tyler the TigerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D4B58E204E0CCB00476D63 /* The_Adventures_of_Tyler_the_TigerUITests.swift */,
+				F8D4B590204E0CCB00476D63 /* Info.plist */,
+			);
+			path = "The Adventures of Tyler the TigerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8D4B564204E0CCB00476D63 /* The Adventures of Tyler the Tiger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D4B593204E0CCB00476D63 /* Build configuration list for PBXNativeTarget "The Adventures of Tyler the Tiger" */;
+			buildPhases = (
+				F8D4B561204E0CCB00476D63 /* Sources */,
+				F8D4B562204E0CCB00476D63 /* Frameworks */,
+				F8D4B563204E0CCB00476D63 /* Resources */,
+				62970F682069457500879701 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Adventures of Tyler the Tiger";
+			productName = "The Adventures of Tyler the Tiger";
+			productReference = F8D4B565204E0CCB00476D63 /* The Adventures of Tyler the Tiger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8D4B57E204E0CCB00476D63 /* The Adventures of Tyler the TigerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D4B596204E0CCB00476D63 /* Build configuration list for PBXNativeTarget "The Adventures of Tyler the TigerTests" */;
+			buildPhases = (
+				F8D4B57B204E0CCB00476D63 /* Sources */,
+				F8D4B57C204E0CCB00476D63 /* Frameworks */,
+				F8D4B57D204E0CCB00476D63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D4B581204E0CCB00476D63 /* PBXTargetDependency */,
+			);
+			name = "The Adventures of Tyler the TigerTests";
+			productName = "The Adventures of Tyler the TigerTests";
+			productReference = F8D4B57F204E0CCB00476D63 /* The Adventures of Tyler the TigerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8D4B589204E0CCB00476D63 /* The Adventures of Tyler the TigerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D4B599204E0CCB00476D63 /* Build configuration list for PBXNativeTarget "The Adventures of Tyler the TigerUITests" */;
+			buildPhases = (
+				F8D4B586204E0CCB00476D63 /* Sources */,
+				F8D4B587204E0CCB00476D63 /* Frameworks */,
+				F8D4B588204E0CCB00476D63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D4B58C204E0CCB00476D63 /* PBXTargetDependency */,
+			);
+			name = "The Adventures of Tyler the TigerUITests";
+			productName = "The Adventures of Tyler the TigerUITests";
+			productReference = F8D4B58A204E0CCB00476D63 /* The Adventures of Tyler the TigerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8D4B55D204E0CCB00476D63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Marist User";
+				TargetAttributes = {
+					F8D4B564204E0CCB00476D63 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F8D4B57E204E0CCB00476D63 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F8D4B564204E0CCB00476D63;
+					};
+					F8D4B589204E0CCB00476D63 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F8D4B564204E0CCB00476D63;
+					};
+				};
+			};
+			buildConfigurationList = F8D4B560204E0CCB00476D63 /* Build configuration list for PBXProject "The Adventures of Tyler the Tiger" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8D4B55C204E0CCB00476D63;
+			productRefGroup = F8D4B566204E0CCB00476D63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8D4B564204E0CCB00476D63 /* The Adventures of Tyler the Tiger */,
+				F8D4B57E204E0CCB00476D63 /* The Adventures of Tyler the TigerTests */,
+				F8D4B589204E0CCB00476D63 /* The Adventures of Tyler the TigerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8D4B563204E0CCB00476D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6254EA71206A7B81001EECDF /* Tyler.m4a in Resources */,
+				F8D4B574204E0CCB00476D63 /* Main.storyboard in Resources */,
+				F8D4B56B204E0CCB00476D63 /* SplashScene.sks in Resources */,
+				621F7C1F2068473D0007605C /* Level01.plist in Resources */,
+				62121C73206980E50019E261 /* .swiftlint.yml in Resources */,
+				F8D4B576204E0CCB00476D63 /* Assets.xcassets in Resources */,
+				F8D4B579204E0CCB00476D63 /* LaunchScreen.storyboard in Resources */,
+				F8D4B56D204E0CCB00476D63 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D4B57D204E0CCB00476D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D4B588204E0CCB00476D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62970F682069457500879701 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8D4B561204E0CCB00476D63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62EA5885206887080070A659 /* GameElements.swift in Sources */,
+				F8D4B56F204E0CCB00476D63 /* GameScene.swift in Sources */,
+				F8D4B59D204E0D6B00476D63 /* SplashScene.swift in Sources */,
+				F8D4B571204E0CCB00476D63 /* GameViewController.swift in Sources */,
+				62EA22112069248A0087A9F6 /* EndGameScene.swift in Sources */,
+				F8D4B569204E0CCB00476D63 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D4B57B204E0CCB00476D63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D4B584204E0CCB00476D63 /* The_Adventures_of_Tyler_the_TigerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D4B586204E0CCB00476D63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D4B58F204E0CCB00476D63 /* The_Adventures_of_Tyler_the_TigerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8D4B581204E0CCB00476D63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D4B564204E0CCB00476D63 /* The Adventures of Tyler the Tiger */;
+			targetProxy = F8D4B580204E0CCB00476D63 /* PBXContainerItemProxy */;
+		};
+		F8D4B58C204E0CCB00476D63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D4B564204E0CCB00476D63 /* The Adventures of Tyler the Tiger */;
+			targetProxy = F8D4B58B204E0CCB00476D63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8D4B572204E0CCB00476D63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D4B573204E0CCB00476D63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8D4B577204E0CCB00476D63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D4B578204E0CCB00476D63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8D4B591204E0CCB00476D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8D4B592204E0CCB00476D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8D4B594204E0CCB00476D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Adventures of Tyler the Tiger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chapsnat.The-Adventures-of-Tyler-the-Tiger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8D4B595204E0CCB00476D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Adventures of Tyler the Tiger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chapsnat.The-Adventures-of-Tyler-the-Tiger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8D4B597204E0CCB00476D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Adventures of Tyler the TigerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chapsnat.The-Adventures-of-Tyler-the-TigerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Adventures of Tyler the Tiger.app/The Adventures of Tyler the Tiger";
+			};
+			name = Debug;
+		};
+		F8D4B598204E0CCB00476D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Adventures of Tyler the TigerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chapsnat.The-Adventures-of-Tyler-the-TigerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Adventures of Tyler the Tiger.app/The Adventures of Tyler the Tiger";
+			};
+			name = Release;
+		};
+		F8D4B59A204E0CCB00476D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Adventures of Tyler the TigerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chapsnat.The-Adventures-of-Tyler-the-TigerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Adventures of Tyler the Tiger";
+			};
+			name = Debug;
+		};
+		F8D4B59B204E0CCB00476D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Adventures of Tyler the TigerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chapsnat.The-Adventures-of-Tyler-the-TigerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Adventures of Tyler the Tiger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8D4B560204E0CCB00476D63 /* Build configuration list for PBXProject "The Adventures of Tyler the Tiger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D4B591204E0CCB00476D63 /* Debug */,
+				F8D4B592204E0CCB00476D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D4B593204E0CCB00476D63 /* Build configuration list for PBXNativeTarget "The Adventures of Tyler the Tiger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D4B594204E0CCB00476D63 /* Debug */,
+				F8D4B595204E0CCB00476D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D4B596204E0CCB00476D63 /* Build configuration list for PBXNativeTarget "The Adventures of Tyler the TigerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D4B597204E0CCB00476D63 /* Debug */,
+				F8D4B598204E0CCB00476D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D4B599204E0CCB00476D63 /* Build configuration list for PBXNativeTarget "The Adventures of Tyler the TigerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D4B59A204E0CCB00476D63 /* Debug */,
+				F8D4B59B204E0CCB00476D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8D4B55D204E0CCB00476D63 /* Project object */;
+}
