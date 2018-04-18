@@ -13,21 +13,34 @@ import AVFoundation
 class GameScene: SKScene, SKPhysicsContactDelegate {
 
     var foregroundNode: SKNode!
+    var backgroundNode: SKNode!
     var gameOver = false
     var leftMove: SKSpriteNode!
     var rightMove: SKSpriteNode!
     var endLevelY = 0
     let player = Player(imageNamed: "Tyler")
     var audioPlayer: AVAudioPlayer!
+    let score = playerScore.score
+    let highScore = playerScore.highScore
+    var gameState = GameState.notRunning
+    var maxPlayerY: Int!
+
+    enum GameState {
+        case notRunning
+        case running
+    }
 
     override func didMove(to view: SKView) {
+        gameState = .running
         anchorPoint = CGPoint.zero
+        backgroundNode = SKNode()
         let background = SKSpriteNode(imageNamed: "GameScreen")
         let xMid = frame.midX
         let yMid = frame.midY
         background.position = CGPoint(x: xMid, y: yMid)
         background.zPosition = -10.0
-        addChild(background)
+        backgroundNode.addChild(background)
+        addChild(backgroundNode)
         let url = Bundle.main.url(forResource: "Tyler", withExtension: "m4a")
         do {
             try audioPlayer = AVAudioPlayer(contentsOf: url!)
@@ -35,6 +48,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         } catch {
             print(error)
         }
+        maxPlayerY = 95
+        playerScore.score = 0
         audioPlayer.numberOfLoops = -1
         audioPlayer.play()
         leftMove = SKSpriteNode(imageNamed: "Left")
@@ -92,26 +107,28 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         leftMove.name = "Left"
         rightMove.name = "Right"
-        for touch: AnyObject in touches {
-            let location = touch.location(in: self)
-            let node = self.atPoint(location)
-            player.physicsBody?.isDynamic = true
-            if player.isOnGround {
-                if (node.name == "Left") {
-                    // Move the player to the left.
-                    player.physicsBody?.applyImpulse(CGVector(dx: -2.5, dy: 6.0))
-                } else if (node.name == "Right") {
-                    // Move the player to the right.
-                    player.physicsBody?.applyImpulse(CGVector(dx: 2.5, dy: 6.0))
-                } } else {
-                        if (node.name == "Left") {
-                            // Move the player to the left.
-                            player.physicsBody?.applyImpulse(CGVector(dx: -0.5, dy: 0.5))
-                        } else if (node.name == "Right") {
-                            // Move the player to the right.
-                            player.physicsBody?.applyImpulse(CGVector(dx: 0.5, dy: 0.5))
+        if gameState == .running {
+            for touch: AnyObject in touches {
+                let location = touch.location(in: self)
+                let node = self.atPoint(location)
+                player.physicsBody?.isDynamic = true
+                if player.isOnGround {
+                    if node.name == "Left" {
+                        // Move the player to the left.
+                        player.physicsBody?.applyImpulse(CGVector(dx: -2.5, dy: 6.0))
+                    } else if node.name == "Right" {
+                        // Move the player to the right.
+                        player.physicsBody?.applyImpulse(CGVector(dx: 2.5, dy: 6.0))
+                    } } else {
+                            if node.name == "Left" {
+                                // Move the player to the left.
+                                player.physicsBody?.applyImpulse(CGVector(dx: -0.5, dy: 0.5))
+                            } else if node.name == "Right" {
+                                // Move the player to the right.
+                                player.physicsBody?.applyImpulse(CGVector(dx: 0.5, dy: 0.5))
+                            }
                         }
-                    }
+            }
         }
     }
 
@@ -124,22 +141,53 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
 
+    func currScore() {
+        // Player jumps higher than inital start value, increase score.
+        if Int(player.position.y) > maxPlayerY {
+            playerScore.score += Int(player.position.y) - maxPlayerY
+            // Set a new max player value to the player's current position.
+            maxPlayerY = Int(player.position.y)
+        }
+        // Store the high score if the current score exceeds it.
+        if playerScore.score > playerScore.highScore {
+            playerScore.highScore = playerScore.score
+        }
+    }
+
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered.
         updatePlayer()
+        currScore()
         if gameOver {
             return
         }
+        if gameState != .running {
+            return
+        }
+        // Player reaches the top value.
         if Int(player.position.y) > endLevelY {
             endGame()
         }
+        // Player falls off the screen.
         if Int(player.position.y) < -100 {
             endGame()
+        }
+        // Scroll the platforms upward in the level.
+        if Int(player.position.y) > 200 {
+            foregroundNode.position = CGPoint(x: 0.0, y: -(player.position.y - 200.0))
+        }
+        // Player jumps far off-screen left and reappears on the right side.
+        if Int(player.position.x) < -20 {
+            player.position = CGPoint(x: self.size.width + 20.0, y: player.position.y)
+        } else if Int(player.position.x) > Int(self.size.width + 20) {
+            // Player jumps off-screen right and reappears on the left side.
+            player.position = CGPoint(x: -20.0, y: player.position.y)
         }
     }
 
     // Called if the player dies or reaches the end of the level.
     func endGame() {
+        gameState = .notRunning
         gameOver = true
         let reveal = SKTransition.crossFade(withDuration: 0.5)
         let endGameScene = EndGameScene(size: self.size)

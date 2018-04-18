@@ -10,6 +10,8 @@ import SpriteKit
 
 class SplashScene: SKScene {
 
+    var help: SKSpriteNode!
+
     override func didMove(to view: SKView) {
         anchorPoint = CGPoint.zero
         let background = SKSpriteNode(imageNamed: "background")
@@ -17,13 +19,25 @@ class SplashScene: SKScene {
         let yMid = frame.midY
         background.position = CGPoint(x: xMid, y: yMid)
         addChild(background)
-        let tapMethod = #selector(SplashScene.handleTap(tapGesture:))
-        let tapGesture = UITapGestureRecognizer(target: self, action: tapMethod)
-        view.addGestureRecognizer(tapGesture)
+        help = SKSpriteNode(imageNamed: "questionmark")
+        help.position = CGPoint(x: xMid / 0.55, y: yMid / 4)
+        help.zPosition = 10.0
+        addChild(help)
     }
 
-    @objc func handleTap(tapGesture: UITapGestureRecognizer) {
-        goNext(scene: GameScene())
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        help.name = "questionmark"
+        for touch: AnyObject in touches {
+            let location = touch.location(in: self)
+            let node = self.atPoint(location)
+            // If the user touches the question mark button, go to help screen.
+            if node.name == "questionmark" {
+                goNext(scene: HelpScene())
+            } else {
+                // Transition into the main game.
+                goNext(scene: GameScene())
+            }
+        }
     }
 
     func goNext(scene: SKScene) {
@@ -38,8 +52,8 @@ class SplashScene: SKScene {
             let reveal = SKTransition.crossFade(withDuration: 5)
             view.presentScene(scene, transition: reveal)
             view.ignoresSiblingOrder = true
-            view.showsFPS = true
-            view.showsNodeCount = true
+            view.showsFPS = false
+            view.showsNodeCount = false
         }
     }
 

@@ -83,4 +83,9 @@ extension GameScene {
         return platNode
     }
 
+    struct playerScore {
+        static var score: Int = 0
+        static var highScore: Int = 0
+    }
+
 }
